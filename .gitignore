@@ -31,5 +31,6 @@ env/
 .DS_Store
 Thumbs.db
 
-# Scratch
+# Scratch / local run artifacts
 pseudogram_openapi.json
+*.log
