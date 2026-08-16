@@ -1,0 +1,14 @@
+# Runtime
+fastapi==0.141.1
+uvicorn==0.52.3
+sqlalchemy==2.0.52
+httpx==0.28.1
+pydantic==2.13.4
+pydantic-settings==2.15.0
+
+# Optional: only needed when DATABASE_URL points at PostgreSQL
+# psycopg[binary]==3.2.3
+
+# Tests
+pytest==9.1.1
+pytest-asyncio==1.4.0

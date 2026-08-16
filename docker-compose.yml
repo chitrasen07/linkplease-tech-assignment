@@ -1,0 +1,16 @@
+services:
+  app:
+    build: .
+    ports:
+      - "8000:8000"
+    env_file:
+      - .env
+    environment:
+      # Overrides .env so the database lives on the mounted volume.
+      DATABASE_URL: sqlite:////data/linkplease.db
+    volumes:
+      - linkplease-data:/data
+    restart: unless-stopped
+
+volumes:
+  linkplease-data:
